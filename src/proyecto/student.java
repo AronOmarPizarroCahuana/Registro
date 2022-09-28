@@ -51,10 +51,10 @@ private DefaultTableModel modelo;
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        recibe = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         tablanotas = new javax.swing.JTable();
+        recibe = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
@@ -64,17 +64,9 @@ private DefaultTableModel modelo;
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        recibe.setBackground(new java.awt.Color(204, 204, 0));
-        recibe.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                recibeActionPerformed(evt);
-            }
-        });
-        jPanel1.add(recibe, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 20, 75, -1));
-
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
         jLabel1.setText("@unamba.edu.pe");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 20, 196, -1));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 30, 196, -1));
 
         tablanotas.setBackground(new java.awt.Color(204, 255, 204));
         tablanotas.setModel(new javax.swing.table.DefaultTableModel(
@@ -90,7 +82,10 @@ private DefaultTableModel modelo;
         ));
         jScrollPane1.setViewportView(tablanotas);
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 405, 100));
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, 405, 100));
+
+        recibe.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
+        jPanel1.add(recibe, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 30, 90, 30));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/vecteezy_abstract-background-with-green-yellow-orange-gradient-colors_9275680.png"))); // NOI18N
         jLabel2.setText("jLabel2");
@@ -133,10 +128,6 @@ private DefaultTableModel modelo;
         ventanaprincipal.setVisible(true);
         this.dispose(); 
     }//GEN-LAST:event_jMenuItem1ActionPerformed
-
-    private void recibeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_recibeActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_recibeActionPerformed
     public void cargarinterfaaz(){
     
     String Datos[][]={};
@@ -197,7 +188,7 @@ private DefaultTableModel modelo;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    public static javax.swing.JTextField recibe;
+    public static javax.swing.JLabel recibe;
     private javax.swing.JTable tablanotas;
     // End of variables declaration//GEN-END:variables
 }

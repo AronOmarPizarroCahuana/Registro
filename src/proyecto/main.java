@@ -35,14 +35,15 @@ public class main extends javax.swing.JFrame {
         Email = new javax.swing.JLabel();
         password = new javax.swing.JLabel();
         contraseña = new javax.swing.JPasswordField();
-        email = new javax.swing.JTextField();
         arroba = new javax.swing.JLabel();
+        email = new javax.swing.JTextField();
+        jLabel3 = new javax.swing.JLabel();
         siguiente = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(476, 450));
         setSize(new java.awt.Dimension(0, 0));
 
         jPanel2.setBackground(new java.awt.Color(51, 102, 255));
@@ -50,41 +51,56 @@ public class main extends javax.swing.JFrame {
 
         Bienbenido.setFont(new java.awt.Font("Sitka Text", 1, 36)); // NOI18N
         Bienbenido.setForeground(new java.awt.Color(255, 255, 255));
-        Bienbenido.setText("Bienvenido");
-        jPanel2.add(Bienbenido, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 20, 226, 48));
+        Bienbenido.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/user (2).png"))); // NOI18N
+        jPanel2.add(Bienbenido, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 0, 170, 150));
 
         Email.setFont(new java.awt.Font("Sitka Banner", 1, 18)); // NOI18N
-        Email.setForeground(new java.awt.Color(255, 255, 255));
+        Email.setForeground(new java.awt.Color(0, 102, 0));
         Email.setText("Email");
-        jPanel2.add(Email, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 70, 70, -1));
+        jPanel2.add(Email, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 170, 70, -1));
 
+        password.setBackground(new java.awt.Color(255, 255, 255));
         password.setFont(new java.awt.Font("Sitka Banner", 1, 18)); // NOI18N
-        password.setForeground(new java.awt.Color(255, 255, 255));
+        password.setForeground(new java.awt.Color(0, 102, 0));
         password.setText("Password");
-        jPanel2.add(password, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 170, 81, -1));
+        jPanel2.add(password, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 280, 81, -1));
 
+        contraseña.setBackground(new java.awt.Color(204, 255, 204));
         contraseña.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 contraseñaMouseClicked(evt);
             }
         });
-        jPanel2.add(contraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(59, 196, 333, 38));
+        jPanel2.add(contraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 310, 320, 40));
 
+        arroba.setBackground(new java.awt.Color(0, 255, 0));
+        arroba.setFont(new java.awt.Font("Segoe UI", 2, 18)); // NOI18N
+        arroba.setForeground(new java.awt.Color(102, 102, 102));
+        arroba.setText("@unamba.edu.pe");
+        jPanel2.add(arroba, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 200, 190, 50));
+
+        email.setBackground(new java.awt.Color(204, 255, 204));
         email.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 emailActionPerformed(evt);
             }
         });
-        jPanel2.add(email, new org.netbeans.lib.awtextra.AbsoluteConstraints(59, 105, 173, 34));
+        jPanel2.add(email, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 200, 150, 40));
 
-        arroba.setFont(new java.awt.Font("Segoe UI", 2, 18)); // NOI18N
-        arroba.setForeground(new java.awt.Color(255, 255, 255));
-        arroba.setText("@unamba.edu.pe");
-        jPanel2.add(arroba, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 101, 161, 37));
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/candado.png"))); // NOI18N
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, 40, 50));
 
-        siguiente.setBackground(new java.awt.Color(51, 51, 51));
+        siguiente.setBackground(new java.awt.Color(0, 153, 153));
         siguiente.setFont(new java.awt.Font("Segoe UI Historic", 1, 18)); // NOI18N
-        siguiente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/forward.png"))); // NOI18N
+        siguiente.setForeground(new java.awt.Color(204, 255, 204));
+        siguiente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/pequeño.png"))); // NOI18N
+        siguiente.setToolTipText("");
+        siguiente.setBorder(null);
+        siguiente.setBorderPainted(false);
+        siguiente.setContentAreaFilled(false);
+        siguiente.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        siguiente.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/pequeño.png"))); // NOI18N
+        siguiente.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/mas_pequeño.png"))); // NOI18N
         siguiente.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 siguienteMouseClicked(evt);
@@ -95,10 +111,13 @@ public class main extends javax.swing.JFrame {
                 siguienteActionPerformed(evt);
             }
         });
-        jPanel2.add(siguiente, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 280, 150, 70));
+        jPanel2.add(siguiente, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 390, 80, 80));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/fondito.png"))); // NOI18N
-        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 480, 420));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/email.png"))); // NOI18N
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 200, 40, 40));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/fondo.png"))); // NOI18N
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 450, 500));
 
         setJMenuBar(jMenuBar1);
 
@@ -106,19 +125,23 @@ public class main extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 470, Short.MAX_VALUE)
-                .addGap(6, 6, 6))
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 401, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void emailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emailActionPerformed
+
+    }//GEN-LAST:event_emailActionPerformed
+
+    private void contraseñaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_contraseñaMouseClicked
+
+    }//GEN-LAST:event_contraseñaMouseClicked
 
     private void siguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_siguienteActionPerformed
 
@@ -156,23 +179,15 @@ public class main extends javax.swing.JFrame {
                 }
             }
             if(band==true){
-       if(email.getText().equals(usuario)&&pass.equals(Contraseña)){
-             Docente1 ventanaDocente= new Docente1();
-                ventanaDocente.setVisible(true);
-                this.dispose();
-        }
-       else{
-               JOptionPane.showMessageDialog(null, "usted esta ingresando como docente"+"\npero no esta registrado en el sistema");
-            }}
+                if(email.getText().equals(usuario)&&pass.equals(Contraseña)){
+                    Docente1 ventanaDocente= new Docente1();
+                    ventanaDocente.setVisible(true);
+                    this.dispose();
+                }
+                else{
+                    JOptionPane.showMessageDialog(null, "usted esta ingresando como docente"+"\npero no esta registrado en el sistema");
+                }}
     }//GEN-LAST:event_siguienteMouseClicked
-
-    private void emailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emailActionPerformed
-
-    }//GEN-LAST:event_emailActionPerformed
-
-    private void contraseñaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_contraseñaMouseClicked
-
-    }//GEN-LAST:event_contraseñaMouseClicked
     public String nombredocen(){
         return contraseña.getText();
     }
@@ -217,7 +232,9 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JLabel arroba;
     private javax.swing.JPasswordField contraseña;
     public static javax.swing.JTextField email;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JLabel password;
