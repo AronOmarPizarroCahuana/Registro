@@ -126,6 +126,8 @@ public class agregaralumno extends javax.swing.JFrame {
         mostrartabla.setContentAreaFilled(false);
         mostrartabla.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         mostrartabla.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        mostrartabla.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/tabla.png"))); // NOI18N
+        mostrartabla.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/tabla2.png"))); // NOI18N
         mostrartabla.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         mostrartabla.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -140,6 +142,8 @@ public class agregaralumno extends javax.swing.JFrame {
         modificar.setContentAreaFilled(false);
         modificar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         modificar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        modificar.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/modificar.png"))); // NOI18N
+        modificar.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/modificar2.png"))); // NOI18N
         modificar.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         modificar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -156,6 +160,8 @@ public class agregaralumno extends javax.swing.JFrame {
         AGREGAR.setContentAreaFilled(false);
         AGREGAR.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         AGREGAR.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        AGREGAR.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/agregar.png"))); // NOI18N
+        AGREGAR.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/agregar2.png"))); // NOI18N
         AGREGAR.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         AGREGAR.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -172,6 +178,8 @@ public class agregaralumno extends javax.swing.JFrame {
         eliminar.setContentAreaFilled(false);
         eliminar.setCursor(new java.awt.Cursor(java.awt.Cursor.MOVE_CURSOR));
         eliminar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        eliminar.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/eliminar.png"))); // NOI18N
+        eliminar.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/eliminar2.png"))); // NOI18N
         eliminar.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         eliminar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -283,7 +291,7 @@ public class agregaralumno extends javax.swing.JFrame {
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(28, Short.MAX_VALUE)
+                .addContainerGap(40, Short.MAX_VALUE)
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -319,7 +327,7 @@ public class agregaralumno extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 482, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
